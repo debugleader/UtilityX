@@ -46,7 +46,7 @@ module.exports = {
 	flatten,
 	nth,
 	pull,
-	head,
 	tail,
+	head,
 	createVars,
 };
