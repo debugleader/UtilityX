@@ -1,7 +1,5 @@
 // Checkers
 
-const { types } = require('util');
-
 const isInt = (n) => !(n % 1);
 const isFloat = (n) => !!(n % 1);
 const isString = (s) => typeof s === 'string';
@@ -14,7 +12,7 @@ const removeDuplicates = (x) => [...new Set(x)];
 const compact = (x) => x.filter((x) => !!x);
 const lastIndex = (x) => x[x.length - 1];
 const flatten = (x, y = Infinity) => x.flat(y);
-const nth = (x, y) => x[x.length + y];
+const nth = (x, y) => (y < 0 ? x[x.length + y] : x[y]);
 const pull = (x, ...y) => {
 	y.forEach((a) => (x = x.filter((z) => z != a)));
 	return x;
