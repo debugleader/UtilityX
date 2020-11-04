@@ -1,7 +1,5 @@
 // Checkers
 
-const { types } = require('util');
-
 const isInt = (n) => !(n % 1);
 const isFloat = (n) => !!(n % 1);
 const isString = (s) => typeof s === 'string';
