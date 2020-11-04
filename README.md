@@ -76,6 +76,16 @@ Tested in **Chrome 74-75**, **Firefox 66-67**, **IE 11**, **Edge 18**, **Safari 
 
 ---
 
+# How can I contribute? 🎉
+
+Please read this [document](CONTRIBUTING.md) before contributing to **UtilityX**! All bug fixes, improvements are appreciated ♥
+
+---
+
+> [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://debugleader.github.io)
+
+---
+
 # What about the license? 📃
  **UtilityX** is released under the _MIT_ license & supports modern environments.
 
