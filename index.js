@@ -20,7 +20,7 @@ const pull = (x, ...y) => {
 const head = (x) => x.filter((a, b) => b != x.length - 1);
 const tail = (x) => x.filter((a, b) => b != 0);
 
-const createVars = (name, amount, value = null) => {
+const createVars = (name, amount, value = 'unspecified') => {
 	let variables = [];
 	for (let i = 0; i !== amount; i++) {
 		if (typeof value !== 'object' || value == null) {
