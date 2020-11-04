@@ -1,0 +1,23 @@
+{
+  "name": "utilityx",
+  "version": "1.0.0",
+  "description": "Javascript useful utils.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/debugleader/UtilityX.git"
+  },
+  "keywords": [
+    "utility",
+    "javascript"
+  ],
+  "author": "Abdallah Al Khassaky",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/debugleader/UtilityX/issues"
+  },
+  "homepage": "https://github.com/debugleader/UtilityX#readme"
+}
