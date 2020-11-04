@@ -58,6 +58,39 @@
 
   ```
   </details>
+  
+  <details>
+  <summary>Check For Strings 🔢</summary>
+  <br />
+  
+  ```javascript
+    x.isString('Hello World!');
+    // => true
+
+  ```
+  </details>
+  
+  <details>
+  <summary>Check For Arrays 🔢</summary>
+  <br />
+  
+  ```javascript
+    x.isArray(['Hello', 'World', '!']);
+    // => true
+
+  ```
+  </details>
+  <details>
+  <summary>Round Numbers 🔢</summary>
+  <br />
+  
+  ```javascript
+    //parameters: number, amount of decimal places
+    x.round(10.55555555, 2)
+    // => 10.56
+
+  ```
+  </details>
 
 </details>
 
