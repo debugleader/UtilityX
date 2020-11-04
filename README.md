@@ -83,9 +83,10 @@
   <details>
   <summary>Round Numbers ⭕</summary>
   <br />
-  
+  ---
+  parameters: number, amount of decimal places
+  ---
   ```javascript
-    //parameters: number, amount of decimal places
     x.round(10.55555555, 2)
     // => 10.56
 
