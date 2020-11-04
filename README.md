@@ -60,7 +60,7 @@
   </details>
   
   <details>
-  <summary>Check For Strings 🔢</summary>
+  <summary>Check For Strings :capital_abcd:</summary>
   <br />
   
   ```javascript
@@ -71,7 +71,7 @@
   </details>
   
   <details>
-  <summary>Check For Arrays 🔢</summary>
+  <summary>Check For Arrays ✔</summary>
   <br />
   
   ```javascript
@@ -81,7 +81,7 @@
   ```
   </details>
   <details>
-  <summary>Round Numbers 🔢</summary>
+  <summary>Round Numbers ⭕</summary>
   <br />
   
   ```javascript
