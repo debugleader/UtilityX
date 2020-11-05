@@ -1,4 +1,5 @@
 # ❗❕ What is this? ❕❗
+
 **UtilityX** makes _JavaScript_ easier by taking the hassle out of working with arrays, numbers, objects, strings, etc.
 **UtilityX’s** modular methods are great for:
 
@@ -12,7 +13,9 @@
 > [![forthebadge](https://forthebadge.com/images/badges/powered-by-responsibility.svg)](https://debugleader.github.io)
 
 ---
+
 # Why use UtilityX? 🚀
+
 **UtilityX** helps programmers write more concise and easier to maintain JavaScript code. **UtilityX** contains tools to simplify programming with strings, numbers, arrays, functions and obfljects. By convention, **UtilityX** module is mapped to the x character.
 
 ---
@@ -22,6 +25,7 @@
 ---
 
 # How can I use this? 🤔
+
 <details>
   <summary>Installation ⚙</summary>
   <hr />
@@ -37,6 +41,7 @@
   <details>
   <summary>Docs ✔</summary>
     <hr />
+    
   <details>
   <summary>Check For Integers 🔢</summary>
   <br />
@@ -45,20 +50,21 @@
     x.isInt(1);
     // => true
 
-  ```
-  </details>
-  
-  <details>
-  <summary>Check For Floats 💥</summary>
-  <br />
-  
-  ```javascript
-    x.isFloat(1.1);
-    // => true
+````
+</details>
+      <!-- New details-->
+<details>
+<summary>Check For Floats 💥</summary>
+<br />
 
-  ```
+```javascript
+  x.isFloat(1.1);
+  // => true
+
+````
+
   </details>
-  
+    <!-- New details-->
   <details>
   <summary>Check For Strings 🔠</summary>
   <br />
@@ -67,19 +73,21 @@
     x.isString('Hello World!');
     // => true
 
-  ```
-  </details>
-  
-  <details>
-  <summary>Check For Arrays ✔</summary>
-  <br />
-  
-  ```javascript
-    x.isArray(['Hello', 'World', '!']);
-    // => true
+````
+</details>
+  <!-- New details-->
+<details>
+<summary>Check For Arrays ✔</summary>
+<br />
 
-  ```
+```javascript
+  x.isArray(['Hello', 'World', '!']);
+  // => true
+
+````
+
   </details>
+  <!-- New details-->
   <details>
   <summary>Round Numbers ⭕</summary>
   <br />
@@ -89,8 +97,8 @@
     x.round(10.55555555, 2)
     // => 10.56
 
-  ```
-  </details>
+```
+</details>
 
 </details>
 
@@ -120,7 +128,9 @@ Please read this [document](CONTRIBUTING.md) before contributing to **UtilityX**
 ---
 
 # What about the license? 📃
- **UtilityX** is released under the _MIT_ license & supports modern environments.
+**UtilityX** is released under the _MIT_ license & supports modern environments.
+
+---
 
 > <img src="https://images.unsplash.com/photo-1518932945647-7a1c969f8be2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" width="600">
 
