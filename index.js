@@ -39,7 +39,7 @@ const createVars = (name, amount, value = "unspecified") => {
   return variables;
 };
 const union = (...x) => [...new Set(x.flat(Infinity))];
-const sortedUnion = (x) => union(x).sort();
+const sortedUnion = (...x) => union(x).sort();
 const deepCopy = (x) => JSON.parse(JSON.stringify(x));
 const clamp = (min, num, max) => (num <= min ? min : num >= max ? max : num);
 const range = (x) => [...Array(x).keys()];
