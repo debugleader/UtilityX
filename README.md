@@ -27,77 +27,201 @@
 # How can I use this? 🤔
 
 <details>
-  <summary>Installation ⚙</summary>
-  <hr />
-  
-  ```bash
-  > npm i utilityx
-  ```
-  ```bash
-  > const x = require("utilityx");
-  ```
-  <hr />
-  </details>
-  <details>
-  <summary>Docs ✔</summary>
-    <hr />
-    
-  <details>
-  <summary>Check For Integers 🔢</summary>
-  <br />
-  
-  ```javascript
-    x.isInt(1);
-    // => true
+<summary>Installation ⚙</summary>
+<hr />
 
+```bash
+    > npm i utilityx
+```
+
+```bash
+    > const x = require("utilityx");
+```
+
+<hr />
+</details>
+<details>
+<summary>Docs ✔</summary>
+<hr />
+<details>
+<summary>Equality Checker 🔰</summary>
+<br />
+  
+```javascript
+    // parameters: (string, string, string, ......)
+    x.checker("utilityx", "utilityx", "utilityx", "utilityx")
+    // => true
 ````
 </details>
-      <!-- New details-->
+<!-- New details-->
+<details>
+<summary>Random Array Picker 💯</summary>
+<br />
+  
+```javascript
+    // parameters: (string, string, string, ......)
+    x.checker("utilityx", "utilityx", "utilityx", "utilityx")
+    // => true
+````
+</details>
+<!-- New details-->
+<details>
+<summary>Longest String Length Sorter 💥</summary>
+<br />
+  
+```javascript
+    // parameters: (array)
+    x.sortByLongestLength(["aaaaaaaa", "a", "aa"])
+    // => ["aaaaaaaa", "aa", "a"]
+````
+</details>
+<!-- New details-->
+<details>
+<summary>Shortest String Length Sorter 🎧</summary>
+<br />
+  
+```javascript
+    // parameters: (array)
+    x.sortByLetter(["aaaaaaaa", "a", "aa"])
+    // => ["aa", "a", "aaaaaaaa"]
+````
+</details>
+<!-- New details-->
+<details>
+<summary>Letter Sorter 🎂</summary>
+<br />
+  
+```javascript
+    // parameters: (array)
+    x.sortByLetter(["hello", "bye", "apple"])
+    // => ["apple", "bye", "hello"]
+````
+</details>
+<!-- New details-->
+<details>
+<summary>Descending Number Sorter 😇</summary>
+<br />
+  
+```javascript
+    // parameters: (array)
+    x.sortNumsDescending([1,3,2,5,4])
+    // => [5,4,3,2,1]
+````
+</details>
+<!-- New details-->
+<details>
+<summary>Ascending Number Sorter 😉</summary>
+<br />
+  
+```javascript
+    // parameters: (array)
+    x.sortNumsAscending([1,3,2,5,4])
+    // => [1,2,3,4,5]
+````
+</details>
+<!-- New details-->
+<details>
+<summary>Vowel Keeper 🎵</summary>
+<br />
+  
+```javascript
+    // parameters: (string)
+    x.keepVowels("utilityx")
+    // => "uii"
+````
+</details>
+<!-- New details-->
+<details>
+<summary>Vowel Remover 🎶</summary>
+<br />
+
+```javascript
+// parameters: (string)
+x.removeVowels("utilityx");
+// => "tltyx"
+```
+
+</details>
+<!-- New details-->
+<details>
+<summary>Space Counter 🔧</summary>
+<br />
+
+```javascript
+// parameters: (string)
+x.spaceCount("utilityx is a util lib.");
+// => 4
+```
+
+</details>
+<!-- New details-->
+<details>
+<summary>Character Counter 😱</summary>
+<br />
+  
+```javascript
+    // parameters: (string, characters)
+    x.charCount("utilityx", "x")
+    // => 1
+````
+</details>
+<!-- New details-->
+<details>
+<summary>Check For Integers 🔢</summary>
+<br />
+
+```javascript
+// parameters: (number)
+x.isInt(1);
+// => true
+```
+
+</details>
+<!-- New details-->
 <details>
 <summary>Check For Floats 💥</summary>
 <br />
 
 ```javascript
-  x.isFloat(1.1);
-  // => true
+// parameters: (number)
+x.isFloat(1.1);
+// => true
+```
 
-````
-
-  </details>
-    <!-- New details-->
-  <details>
-  <summary>Check For Strings 🔠</summary>
-  <br />
+</details>
+<!-- New details-->
+<details>
+<summary>Check For Strings 🔠</summary>
+<br />
   
   ```javascript
+    // paramters: (string)
     x.isString('Hello World!');
     // => true
-
 ````
 </details>
-  <!-- New details-->
+<!-- New details-->
 <details>
 <summary>Check For Arrays ✔</summary>
 <br />
 
 ```javascript
-  x.isArray(['Hello', 'World', '!']);
-  // => true
+// parameters: (array)
+x.isArray(["Hello", "World", "!"]);
+// => true
+```
 
-````
-
-  </details>
-  <!-- New details-->
-  <details>
-  <summary>Round Numbers ⭕</summary>
-  <br />
+</details>
+<!-- New details-->
+<details>
+<summary>Round Numbers ⭕</summary>
+<br />
   
   ```javascript
     // parameters: (number, amount of decimal places)
     x.round(10.55555555, 2)
     // => 10.56
-
-```
+````
 </details>
 
 </details>
@@ -118,8 +242,8 @@
 
 ---
 
-
 # Is it tested? 🧪
+
 Tested in **Chrome 74-75**, **Firefox 66-67**, **IE 11**, **Edge 18**, **Safari 11-12**, & **Node.js 8-12**.
 
 ---
@@ -149,6 +273,7 @@ Please read this [document](CONTRIBUTING.md) before contributing to **UtilityX**
 ---
 
 # What about the license? 📃
+
 **UtilityX** is released under the _MIT_ license & supports modern environments.
 
 ---
@@ -164,6 +289,7 @@ Please read this [document](CONTRIBUTING.md) before contributing to **UtilityX**
 > [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://debugleader.github.io)
 
 ---
+
 ```java
-  > Thank you for reading this to the end! 😎
+> Thank you for reading this to the end! 😎
 ```
