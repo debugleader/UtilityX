@@ -203,13 +203,13 @@ const camelCase = (s) => {
 	return s.toLowerCase().replace(/[^a-zA-Z0-9]+(.)/g, (m, chr) => chr.toUpperCase());
 };
 /**
- *This function converts a string to PascalCase
+ * This function converts a string to PascalCase
  * @param {string} x string to convert
  * @returns {string} converted string
  */
 const pascalCase = (s) => [...camelCase(s).split('')[0].toUpperCase(), ...tail(camelCase(s).split(''))].join('');
 /**
- *This function converts a string to snake_case
+ * This function converts a string to snake_case
  * @param {string} x string to convert
  * @returns {string} converted string
  */
@@ -219,13 +219,13 @@ const snakeCase = (s) =>
 		.map((x) => x.toLowerCase())
 		.join('_');
 /**
- *This function converts a string to kebab-case
+ * This function converts a string to kebab-case
  * @param {string} x string to convert
  * @returns {string} converted string
  */
 const kebabCase = (s) => snakeCase(s).replace(/_/g, '-');
 /**
- *This function Capitalizes a string
+ * This function Capitalizes a string
  * @param {string} x string to convert
  * @returns {string} converted string
  */
