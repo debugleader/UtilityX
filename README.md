@@ -106,6 +106,7 @@
   <br />
 
   ```javascript
+    // parameters: (array)
     x.removeDuplicates([1, 2, 3, 4, 2, 3])
     // => [1, 2, 3, 4]
 
@@ -119,6 +120,7 @@
   <br />
 
 ```javascript
+// parameters: (array)
 x.compact([null, '', undefined, 0, 5, 'hello']);
 // => [5, 'hello']
 ```
@@ -131,6 +133,7 @@ x.compact([null, '', undefined, 0, 5, 'hello']);
   <br />
 
 ```javascript
+// parameters: (array)
 x.lastIndex([1, 2, 3, 4, 'Hi']);
 // => 'Hi'
 ```
@@ -143,7 +146,7 @@ x.lastIndex([1, 2, 3, 4, 'Hi']);
   <br />
 
 ```javascript
-// parameters: (array, depth to flatten)
+// parameters: (array, depth to flatten(Number))
 x.flatten([1, [2, [3, [4, [5]]]]]);
 // => [1, 2, 3, 4, 5]
 ```
@@ -156,7 +159,7 @@ x.flatten([1, [2, [3, [4, [5]]]]]);
   <br />
 
 ```javascript
-// parameters: (array, index(negative or positive))
+// parameters: (array, index(negative or positive Number))
 x.nth(['first', 'second', 'third'], -2);
 // => 'second'
 ```
@@ -182,6 +185,7 @@ x.pull([1, 2, 3, 'hello', 4], 1, 'hello');
   <br />
 
 ```javascript
+// parameters: (array)
 x.head([1, 2, 3, 4, 5]);
 // => [1, 2, 3, 4]
 ```
@@ -194,6 +198,7 @@ x.head([1, 2, 3, 4, 5]);
   <br />
 
 ```javascript
+// parameters: (array)
 x.removeDuplicates([1, 2, 3, 4, 5]);
 // => [2, 3, 4, 5]
 ```
@@ -222,6 +227,7 @@ console.log(fruit0, fruit1);
   <br />
 
 ```javascript
+// parameters: (array, array, array, ...)
 x.union([1, 2, 3, 4, 5], [1, 2], [3, 6]);
 // => [1, 2, 3, 4, 5, 6]
 ```
@@ -233,6 +239,7 @@ x.union([1, 2, 3, 4, 5], [1, 2], [3, 6]);
   <br />
 
 ```javascript
+// parameters: (array, array, array, ...)
 x.sortedUnion([5, 2, 4], [6, 4, 9]);
 // => [2, 4, 5, 6, 9]
 ```
@@ -244,6 +251,7 @@ x.sortedUnion([5, 2, 4], [6, 4, 9]);
   <br />
 
 ```javascript
+// parameters: (array)
 arr = [1, 2, 3];
 x.deepCopy(arr);
 // => [1, 2, 3]
@@ -272,6 +280,7 @@ x.clamp([2, 10, 5]);
   <br />
 
 ```javascript
+// parameters: (Number)
 x.range(5);
 // => [0, 1, 2, 3, 4]
 ```
@@ -283,6 +292,7 @@ x.range(5);
   <br />
 
 ```javascript
+// parameters: (String)
 x.camelCase('caMel caSe');
 // => 'camelCase'
 ```
@@ -294,6 +304,7 @@ x.camelCase('caMel caSe');
   <br />
 
 ```javascript
+// parameters: (String)
 x.pascalCase('paScAl caSe');
 // => 'PascalCase'
 ```
@@ -305,6 +316,7 @@ x.pascalCase('paScAl caSe');
   <br />
 
 ```javascript
+// parameters: (String)
 x.snakeCase('snAke caSe');
 // => 'sn_ake_cas_e'
 x.snakeCase('snake case');
@@ -318,6 +330,7 @@ x.snakeCase('snake case');
   <br />
 
 ```javascript
+// parameters: (String)
 x.kebabCase('keBab caSe');
 // => 'ke-bab-ca-se'
 x.kebabCase('kebab case');
@@ -331,6 +344,7 @@ x.kebabCase('kebab case');
   <br />
 
 ```javascript
+// parameters: (String)
 x.camelCase('caPs');
 // => 'CaPs'
 ```
