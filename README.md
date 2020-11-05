@@ -10,6 +10,10 @@
 
 ---
 
+> Check out our [WIKI](https://github.com/debugleader/UtilityX/wiki) for more info!! 
+
+---
+
 > [![forthebadge](https://forthebadge.com/images/badges/powered-by-responsibility.svg)](https://debugleader.github.io)
 
 ---
@@ -27,76 +31,200 @@
 # How can I use this? 🤔
 
 <details>
-  <summary>Installation ⚙</summary>
-  <hr />
-  
-  ```bash
-  > npm i utilityx
-  ```
-  ```bash
-  > const x = require("utilityx");
-  ```
-  <hr />
-  </details>
-  <details>
-  <summary>Docs ✔</summary>
-    <hr />
-    
-  <details>
-  <summary>Check For Integers 🔢</summary>
-  <br />
-  
-  ```javascript
-    x.isInt(1);
-    // => true
+<summary>Installation ⚙</summary>
+<hr />
 
+```bash
+    > npm i utilityx
+```
+
+```bash
+    > const x = require("utilityx");
+```
+
+<hr />
+</details>
+<details>
+<summary>Docs ✔</summary>
+<hr />
+<details>
+<summary>Equality Checker 🔰</summary>
+<br />
+  
+```javascript
+    // parameters: (string, string, string, ......)
+    x.checker("utilityx", "utilityx", "utilityx", "utilityx")
+    // => true
 ````
 </details>
-      <!-- New details-->
+<!-- New details-->
+<details>
+<summary>Random Array Picker 💯</summary>
+<br />
+  
+```javascript
+    // parameters: (string, string, string, ......)
+    x.checker("utilityx", "utilityx", "utilityx", "utilityx")
+    // => true
+````
+</details>
+<!-- New details-->
+<details>
+<summary>Longest String Length Sorter 💥</summary>
+<br />
+  
+```javascript
+    // parameters: (array)
+    x.sortByLongestLength(["aaaaaaaa", "a", "aa"])
+    // => ["aaaaaaaa", "aa", "a"]
+````
+</details>
+<!-- New details-->
+<details>
+<summary>Shortest String Length Sorter 🎧</summary>
+<br />
+  
+```javascript
+    // parameters: (array)
+    x.sortByLetter(["aaaaaaaa", "a", "aa"])
+    // => ["aa", "a", "aaaaaaaa"]
+````
+</details>
+<!-- New details-->
+<details>
+<summary>Letter Sorter 🎂</summary>
+<br />
+  
+```javascript
+    // parameters: (array)
+    x.sortByLetter(["hello", "bye", "apple"])
+    // => ["apple", "bye", "hello"]
+````
+</details>
+<!-- New details-->
+<details>
+<summary>Descending Number Sorter 😇</summary>
+<br />
+  
+```javascript
+    // parameters: (array)
+    x.sortNumsDescending([1,3,2,5,4])
+    // => [5,4,3,2,1]
+````
+</details>
+<!-- New details-->
+<details>
+<summary>Ascending Number Sorter 😉</summary>
+<br />
+  
+```javascript
+    // parameters: (array)
+    x.sortNumsAscending([1,3,2,5,4])
+    // => [1,2,3,4,5]
+````
+</details>
+<!-- New details-->
+<details>
+<summary>Vowel Keeper 🎵</summary>
+<br />
+  
+```javascript
+    // parameters: (string)
+    x.keepVowels("utilityx")
+    // => "uii"
+````
+</details>
+<!-- New details-->
+<details>
+<summary>Vowel Remover 🎶</summary>
+<br />
+
+```javascript
+// parameters: (string)
+x.removeVowels("utilityx");
+// => "tltyx"
+```
+
+</details>
+<!-- New details-->
+<details>
+<summary>Space Counter 🔧</summary>
+<br />
+
+```javascript
+// parameters: (string)
+x.spaceCount("utilityx is a util lib.");
+// => 4
+```
+
+</details>
+<!-- New details-->
+<details>
+<summary>Character Counter 😱</summary>
+<br />
+  
+```javascript
+    // parameters: (string, characters)
+    x.charCount("utilityx", "x")
+    // => 1
+````
+</details>
+<!-- New details-->
+<details>
+<summary>Check For Integers 🔢</summary>
+<br />
+
+```javascript
+// parameters: (number)
+x.isInt(1);
+// => true
+```
+
+</details>
+<!-- New details-->
 <details>
 <summary>Check For Floats 💥</summary>
 <br />
 
 ```javascript
-  x.isFloat(1.1);
-  // => true
+// parameters: (number)
+x.isFloat(1.1);
+// => true
+```
 
-````
-
-  </details>
-    <!-- New details-->
-  <details>
-  <summary>Check For Strings 🔠</summary>
-  <br />
+</details>
+<!-- New details-->
+<details>
+<summary>Check For Strings 🔠</summary>
+<br />
   
   ```javascript
+    // paramters: (string)
     x.isString('Hello World!');
     // => true
-
 ````
 </details>
-  <!-- New details-->
+<!-- New details-->
 <details>
 <summary>Check For Arrays ✔</summary>
 <br />
 
 ```javascript
-  x.isArray(['Hello', 'World', '!']);
-  // => true
+// parameters: (array)
+x.isArray(["Hello", "World", "!"]);
+// => true
+```
 
-````
-
-  </details>
-  <!-- New details-->
-  <details>
-  <summary>Round Numbers ⭕</summary>
-  <br />
+</details>
+<!-- New details-->
+<details>
+<summary>Round Numbers ⭕</summary>
+<br />
   
   ```javascript
     // parameters: (number, amount of decimal places)
     x.round(10.55555555, 2)
     // => 10.56
-
 ````
 </details>
 
@@ -106,6 +234,7 @@
   <br />
 
   ```javascript
+    // parameters: (array)
     x.removeDuplicates([1, 2, 3, 4, 2, 3])
     // => [1, 2, 3, 4]
 
@@ -115,10 +244,11 @@
 
   <!-- New details-->
   <details>
-  <summary>Remove null values from array ❌</summary>
+  <summary>Remove falsy values from array ✔</summary>
   <br />
 
 ```javascript
+// parameters: (array)
 x.compact([null, '', undefined, 0, 5, 'hello']);
 // => [5, 'hello']
 ```
@@ -131,6 +261,7 @@ x.compact([null, '', undefined, 0, 5, 'hello']);
   <br />
 
 ```javascript
+// parameters: (array)
 x.lastIndex([1, 2, 3, 4, 'Hi']);
 // => 'Hi'
 ```
@@ -143,7 +274,7 @@ x.lastIndex([1, 2, 3, 4, 'Hi']);
   <br />
 
 ```javascript
-// parameters: (array, depth to flatten)
+// parameters: (array, depth to flatten(Number))
 x.flatten([1, [2, [3, [4, [5]]]]]);
 // => [1, 2, 3, 4, 5]
 ```
@@ -156,7 +287,7 @@ x.flatten([1, [2, [3, [4, [5]]]]]);
   <br />
 
 ```javascript
-// parameters: (array, index(negative or positive))
+// parameters: (array, index(negative or positive Number))
 x.nth(['first', 'second', 'third'], -2);
 // => 'second'
 ```
@@ -182,6 +313,7 @@ x.pull([1, 2, 3, 'hello', 4], 1, 'hello');
   <br />
 
 ```javascript
+// parameters: (array)
 x.head([1, 2, 3, 4, 5]);
 // => [1, 2, 3, 4]
 ```
@@ -194,6 +326,7 @@ x.head([1, 2, 3, 4, 5]);
   <br />
 
 ```javascript
+// parameters: (array)
 x.removeDuplicates([1, 2, 3, 4, 5]);
 // => [2, 3, 4, 5]
 ```
@@ -222,6 +355,7 @@ console.log(fruit0, fruit1);
   <br />
 
 ```javascript
+// parameters: (array, array, array, ...)
 x.union([1, 2, 3, 4, 5], [1, 2], [3, 6]);
 // => [1, 2, 3, 4, 5, 6]
 ```
@@ -229,10 +363,11 @@ x.union([1, 2, 3, 4, 5], [1, 2], [3, 6]);
 </details>
   <!-- New details-->
   <details>
-  <summary>Make sorted union of arrays ☮</summary>
+  <summary>Make sorted union of arrays 🤞</summary>
   <br />
 
 ```javascript
+// parameters: (array, array, array, ...)
 x.sortedUnion([5, 2, 4], [6, 4, 9]);
 // => [2, 4, 5, 6, 9]
 ```
@@ -244,6 +379,7 @@ x.sortedUnion([5, 2, 4], [6, 4, 9]);
   <br />
 
 ```javascript
+// parameters: (array)
 arr = [1, 2, 3];
 x.deepCopy(arr);
 // => [1, 2, 3]
@@ -268,10 +404,11 @@ x.clamp([2, 10, 5]);
 </details>
   <!-- New details-->
   <details>
-  <summary>Range function (yes, like in python) 🐍</summary>
+  <summary>Range function (yes, like in python) 😁</summary>
   <br />
 
 ```javascript
+// parameters: (Number)
 x.range(5);
 // => [0, 1, 2, 3, 4]
 ```
@@ -283,6 +420,7 @@ x.range(5);
   <br />
 
 ```javascript
+// parameters: (String)
 x.camelCase('caMel caSe');
 // => 'camelCase'
 ```
@@ -294,6 +432,7 @@ x.camelCase('caMel caSe');
   <br />
 
 ```javascript
+// parameters: (String)
 x.pascalCase('paScAl caSe');
 // => 'PascalCase'
 ```
@@ -305,6 +444,7 @@ x.pascalCase('paScAl caSe');
   <br />
 
 ```javascript
+// parameters: (String)
 x.snakeCase('snAke caSe');
 // => 'sn_ake_cas_e'
 x.snakeCase('snake case');
@@ -318,6 +458,7 @@ x.snakeCase('snake case');
   <br />
 
 ```javascript
+// parameters: (String)
 x.kebabCase('keBab caSe');
 // => 'ke-bab-ca-se'
 x.kebabCase('kebab case');
@@ -327,16 +468,16 @@ x.kebabCase('kebab case');
 </details>
 <!-- New details-->
   <details>
-  <summary>Capitalize</summary>
+  <summary>Capitalize 🔠</summary>
   <br />
 
 ```javascript
+// parameters: (String)
 x.camelCase('caPs');
 // => 'CaPs'
 ```
 
 </details>
-
 </details>
 
 ---
@@ -402,3 +543,7 @@ Please read this [document](CONTRIBUTING.md) before contributing to **UtilityX**
 > [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://debugleader.github.io)
 
 ---
+
+```java
+> Thank you for reading this to the end! 😎
+```
