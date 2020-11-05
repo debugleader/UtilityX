@@ -468,7 +468,7 @@ x.kebabCase('kebab case');
 </details>
 <!-- New details-->
   <details>
-  <summary>Capitalize</summary>
+  <summary>Capitalize 🤙</summary>
   <br />
 
 ```javascript
