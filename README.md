@@ -13,14 +13,13 @@
 > [![forthebadge](https://forthebadge.com/images/badges/powered-by-responsibility.svg)](https://debugleader.github.io)
 
 ---
+# A letter of Appreciation ❣
 
-# Why use UtilityX? 🚀
-
-**UtilityX** helps programmers write more concise and easier to maintain JavaScript code. **UtilityX** contains tools to simplify programming with strings, numbers, arrays, functions and obfljects. By convention, **UtilityX** module is mapped to the x character.
+**A huuugeee Thanks to [Dark-error-Honor](https://github.com/Dark-error-Honor) for helping me create UtilityX!**
 
 ---
 
-> [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://debugleader.github.io)
+> [![forthebadge](https://forthebadge.com/images/badges/uses-brains.svg)](https://debugleader.github.io)
 
 ---
 
@@ -107,6 +106,17 @@
 > [![forthebadge](https://forthebadge.com/images/badges/ctrl-c-ctrl-v.svg)](https://debugleader.github.io)
 
 ---
+
+# Why use UtilityX? 🚀
+
+**UtilityX** helps programmers write more concise and easier to maintain JavaScript code. **UtilityX** contains tools to simplify programming with strings, numbers, arrays, functions and obfljects. By convention, **UtilityX** module is mapped to the x character.
+
+---
+
+> [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://debugleader.github.io)
+
+---
+
 
 # Is it tested? 🧪
 Tested in **Chrome 74-75**, **Firefox 66-67**, **IE 11**, **Edge 18**, **Safari 11-12**, & **Node.js 8-12**.
