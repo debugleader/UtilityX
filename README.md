@@ -137,6 +137,16 @@ Please read this [document](CONTRIBUTING.md) before contributing to **UtilityX**
 
 ---
 
+# Did you find an issue? ⚠️
+
+**Please read [this document.](SECURITY.md)**
+
+---
+
+> [![forthebadge](https://forthebadge.com/images/badges/not-an-issue.svg)](https://debugleader.github.io)
+
+---
+
 # What about the license? 📃
 **UtilityX** is released under the _MIT_ license & supports modern environments.
 
