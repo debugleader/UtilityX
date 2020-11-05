@@ -1,3 +1,14 @@
+const charCount = (s, y) => (s.match(new RegExp(y, "g")) || []).length;
+const spaceCount = (s) => [...s].filter((x) => x === " ").length;
+const removeVowels = (s) => s.replace(/[aeiou]/gi, "");
+const keepVowels = (s) => s.replace(/[^aeiou]/gi, "");
+const sortNumsAscending = (x) => (x || []).sort((a, b) => a - b);
+const sortNumsDescending = (x) => (x || []).sort((a, b) => b - a);
+const sortByLetter = (x) => x.sort();
+const sortByShortestLength = (x) => x.sort((a, b) => a.length - b.length);
+const sortByLongestLength = (x) => x.sort((a, b) => b.length - a.length);
+const checker = (x) => x.every((y, i, a) => y === a[0] && y !== null);
+const randomElement = (x) => x[Math.floor(Math.random() * x.length)];
 const isInt = (n) => !(n % 1);
 const isFloat = (n) => !!(n % 1);
 const isString = (s) => typeof s === "string";
@@ -75,4 +86,15 @@ module.exports = {
   snakeCase,
   kebabCase,
   capitalize,
+  charCount,
+  spaceCount,
+  removeVowels,
+  keepVowels,
+  sortNumsAscending,
+  sortNumsDescending,
+  sortByLetter,
+  sortByLongestLength,
+  sortByShortestLength,
+  checker,
+  randomElement,
 };
