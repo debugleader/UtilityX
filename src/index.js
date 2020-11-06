@@ -4,25 +4,25 @@
  * @param {object} y the regular expression to match
  * @returns {number} The number of times the regex matches
  */
-const charCount = (s, y) => (s.match(new RegExp(y, 'g')) || []).length;
+const charCount = (s, y) => (s.match(new RegExp(y, "g")) || []).length;
 /**
  * This function returns the amount of spaces in the provided string
  * @param {String} s String to search for spaces
  * @returns {number} amount of spaces
  */
-const spaceCount = (s) => [...s].filter((x) => x === ' ').length;
+const spaceCount = (s) => [...s].filter((x) => x === " ").length;
 /**
  * This function removes all vowels from a string
  * @param {String} s string to remove vowels of
  * @returns {String} string without vowels
  */
-const removeVowels = (s) => s.replace(/[aeiou]/gi, '');
+const removeVowels = (s) => s.replace(/[aeiou]/gi, "");
 /**
  * This function removes all consonants from a string
  * @param {String} s string to remove consonants
  * @returns {String} string without consonants
  */
-const keepVowels = (s) => s.replace(/[^aeiou]/gi, '');
+const keepVowels = (s) => s.replace(/[^aeiou]/gi, "");
 /**
  *This function sorts an array by ascending number order
  * @param {Array} x array to sort by number ascending
@@ -79,7 +79,7 @@ const isFloat = (n) => !!(n % 1);
  *This function checks if the type is a string
  * @param {*} x variable to check
  */
-const isString = (s) => typeof s === 'string';
+const isString = (s) => typeof s === "string";
 /**
  *This function checks if the type is an array
  * @param {*} x variable to check
@@ -126,11 +126,11 @@ const nth = (x, y) => (y < 0 ? x[x.length + y] : x[y]);
  *This function removes the provided values from the provided array
  * @param {Array} x Array to remove values from
  * @param {...*} y Values to remove
- * @returns {Array} Array with nu falsy values
+ * @returns {Array} Array with falsy values
  */
 const pull = (x, ...y) => {
-	y.forEach((a) => (x = x.filter((z) => z != a)));
-	return x;
+  y.forEach((a) => (x = x.filter((z) => z != a)));
+  return x;
 };
 /**
  *This function removes the last element from an array
@@ -144,25 +144,6 @@ const head = (x) => x.filter((a, b) => b != x.length - 1);
  * @returns {Array} Array without first value
  */
 const tail = (x) => x.filter((a, b) => b != 0);
-/**
- * this function dynamically creates variables
- * @param {String} name
- * @param {number} amount
- * @param {String|Array=} value
- */
-const createVars = (name, amount, value = 'unspecified') => {
-	let variables = [];
-	for (let i = 0; i !== amount; i++) {
-		if (typeof value !== 'object' || value == null) {
-			eval(`${name}${i} = '${value}'`);
-			variables.push(name + i);
-		} else {
-			eval(`${name}${i} = '${value[i]}'`);
-			variables.push(name + i);
-		}
-	}
-	return variables;
-};
 /**
  *This function merges arrays to 1 array without duplicates
  * @param {...Array} x Arrays to merge
@@ -200,30 +181,36 @@ const range = (x) => [...Array(x).keys()];
  * @returns {string} converted string
  */
 const camelCase = (s) => {
-	return s.toLowerCase().replace(/[^a-zA-Z0-9]+(.)/g, (m, chr) => chr.toUpperCase());
+  return s
+    .toLowerCase()
+    .replace(/[^a-zA-Z0-9]+(.)/g, (m, chr) => chr.toUpperCase());
 };
 /**
  * This function converts a string to PascalCase
  * @param {string} x string to convert
  * @returns {string} converted string
  */
-const pascalCase = (s) => [...camelCase(s).split('')[0].toUpperCase(), ...tail(camelCase(s).split(''))].join('');
+const pascalCase = (s) =>
+  [
+    ...camelCase(s).split("")[0].toUpperCase(),
+    ...tail(camelCase(s).split("")),
+  ].join("");
 /**
  * This function converts a string to snake_case
  * @param {string} x string to convert
  * @returns {string} converted string
  */
 const snakeCase = (s) =>
-	s
-		.match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
-		.map((x) => x.toLowerCase())
-		.join('_');
+  s
+    .match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
+    .map((x) => x.toLowerCase())
+    .join("_");
 /**
  * This function converts a string to kebab-case
  * @param {string} x string to convert
  * @returns {string} converted string
  */
-const kebabCase = (s) => snakeCase(s).replace(/_/g, '-');
+const kebabCase = (s) => snakeCase(s).replace(/_/g, "-");
 /**
  * This function Capitalizes a string
  * @param {string} x string to convert
@@ -232,39 +219,38 @@ const kebabCase = (s) => snakeCase(s).replace(/_/g, '-');
 const capitalize = (s) => s[0].toUpperCase() + s.slice(1);
 
 module.exports = {
-	isInt,
-	isFloat,
-	isString,
-	isArray,
-	round,
-	removeDuplicates,
-	compact,
-	lastIndex,
-	flatten,
-	nth,
-	pull,
-	tail,
-	head,
-	createVars,
-	union,
-	sortedUnion,
-	deepCopy,
-	clamp,
-	range,
-	camelCase,
-	pascalCase,
-	snakeCase,
-	kebabCase,
-	capitalize,
-	charCount,
-	spaceCount,
-	removeVowels,
-	keepVowels,
-	sortNumsAscending,
-	sortNumsDescending,
-	sortByLetter,
-	sortByLongestLength,
-	sortByShortestLength,
-	checker,
-	randomElement,
+  isInt,
+  isFloat,
+  isString,
+  isArray,
+  round,
+  removeDuplicates,
+  compact,
+  lastIndex,
+  flatten,
+  nth,
+  pull,
+  tail,
+  head,
+  union,
+  sortedUnion,
+  deepCopy,
+  clamp,
+  range,
+  camelCase,
+  pascalCase,
+  snakeCase,
+  kebabCase,
+  capitalize,
+  charCount,
+  spaceCount,
+  removeVowels,
+  keepVowels,
+  sortNumsAscending,
+  sortNumsDescending,
+  sortByLetter,
+  sortByLongestLength,
+  sortByShortestLength,
+  checker,
+  randomElement,
 };

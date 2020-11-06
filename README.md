@@ -10,7 +10,7 @@
 
 ---
 
-> Check out our [WIKI](https://github.com/debugleader/UtilityX/wiki) for more info!! 
+> Check out our [WIKI](https://github.com/debugleader/UtilityX/wiki) for more info!!
 
 ---
 
@@ -233,12 +233,11 @@ x.isArray(["Hello", "World", "!"]);
   <summary>Remove duplicates from array ❌</summary>
   <br />
 
-  ```javascript
-    // parameters: (array)
-    x.removeDuplicates([1, 2, 3, 4, 2, 3])
-    // => [1, 2, 3, 4]
-
-````
+```javascript
+// parameters: (array)
+x.removeDuplicates([1, 2, 3, 4, 2, 3]);
+// => [1, 2, 3, 4]
+```
 
 </details>
 
@@ -249,7 +248,7 @@ x.isArray(["Hello", "World", "!"]);
 
 ```javascript
 // parameters: (array)
-x.compact([null, '', undefined, 0, 5, 'hello']);
+x.compact([null, "", undefined, 0, 5, "hello"]);
 // => [5, 'hello']
 ```
 
@@ -262,7 +261,7 @@ x.compact([null, '', undefined, 0, 5, 'hello']);
 
 ```javascript
 // parameters: (array)
-x.lastIndex([1, 2, 3, 4, 'Hi']);
+x.lastIndex([1, 2, 3, 4, "Hi"]);
 // => 'Hi'
 ```
 
@@ -288,7 +287,7 @@ x.flatten([1, [2, [3, [4, [5]]]]]);
 
 ```javascript
 // parameters: (array, index(negative or positive Number))
-x.nth(['first', 'second', 'third'], -2);
+x.nth(["first", "second", "third"], -2);
 // => 'second'
 ```
 
@@ -301,7 +300,7 @@ x.nth(['first', 'second', 'third'], -2);
 
 ```javascript
 // parameters: (array, values to pull out)
-x.pull([1, 2, 3, 'hello', 4], 1, 'hello');
+x.pull([1, 2, 3, "hello", 4], 1, "hello");
 // => [1, 2, 3, 4]
 ```
 
@@ -329,22 +328,6 @@ x.head([1, 2, 3, 4, 5]);
 // parameters: (array)
 x.removeDuplicates([1, 2, 3, 4, 5]);
 // => [2, 3, 4, 5]
-```
-
-</details>
-
-  <!-- New details-->
-  <details>
-  <summary>Dynamicaly create variables 😎</summary>
-  <br />
-
-```javascript
-// parameters: (name, amount, value(array or single value) default= unspecified)
-fruits = ['apple', 'lemon', 'mango', 'pear'];
-x.createVars('fruit', fruits.lenth, fruits);
-// => ['fruit0', 'fruit1', 'fruit2', 'fruit3']
-console.log(fruit0, fruit1);
-// 'apple lemon'
 ```
 
 </details>
@@ -421,7 +404,7 @@ x.range(5);
 
 ```javascript
 // parameters: (String)
-x.camelCase('caMel caSe');
+x.camelCase("caMel caSe");
 // => 'camelCase'
 ```
 
@@ -433,7 +416,7 @@ x.camelCase('caMel caSe');
 
 ```javascript
 // parameters: (String)
-x.pascalCase('paScAl caSe');
+x.pascalCase("paScAl caSe");
 // => 'PascalCase'
 ```
 
@@ -445,9 +428,9 @@ x.pascalCase('paScAl caSe');
 
 ```javascript
 // parameters: (String)
-x.snakeCase('snAke caSe');
+x.snakeCase("snAke caSe");
 // => 'sn_ake_cas_e'
-x.snakeCase('snake case');
+x.snakeCase("snake case");
 // => 'snake_case'
 ```
 
@@ -459,9 +442,9 @@ x.snakeCase('snake case');
 
 ```javascript
 // parameters: (String)
-x.kebabCase('keBab caSe');
+x.kebabCase("keBab caSe");
 // => 'ke-bab-ca-se'
-x.kebabCase('kebab case');
+x.kebabCase("kebab case");
 // => 'kebab-case'
 ```
 
@@ -473,7 +456,7 @@ x.kebabCase('kebab case');
 
 ```javascript
 // parameters: (String)
-x.camelCase('caPs');
+x.camelCase("caPs");
 // => 'CaPs'
 ```
 
