@@ -527,6 +527,8 @@ Please read this [document](CONTRIBUTING.md) before contributing to **UtilityX**
 
 ---
 
-```java
+ ```java
 > Thank you for reading this to the end! 😎
 ```
+
+---
