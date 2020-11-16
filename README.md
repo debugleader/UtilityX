@@ -10,6 +10,10 @@
 
 ---
 
+> <img src="./assets/logo.png" width="190">
+
+---
+
 > Check out our [WIKI](https://github.com/debugleader/UtilityX/wiki) for more info!!
 
 ---
